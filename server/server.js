@@ -15,6 +15,10 @@ app.use(morgan("dev"));
 app.use("/api/users", userroutes);
 app.use("/api/messages", messageroutes);
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
 const server = app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
