@@ -20,7 +20,9 @@ export default function Chat() {
 
   useEffect(() => {
     if (user?.email) {
-      socket.current = io(import.meta.env.VITE_SERVER_URL);
+      socket.current = io(import.meta.env.VITE_SERVER_URL, {
+        transports: ["websocket"],
+      });
       socket.current.emit("add-user", user.email);
     }
   }, [user?.email]);
