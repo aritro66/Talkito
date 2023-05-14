@@ -5,9 +5,10 @@ const morgan = require("morgan");
 const userroutes = require("./routes/userroutes");
 const messageroutes = require("./routes/messageroutes");
 const socket = require("socket.io");
+require("dotenv").config();
 const PORT = process.env.PORT || 4001;
-
-app.use(cors());
+console.log(process.env.CLIENT_ORIGIN);
+app.use(cors({}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(morgan("dev"));
