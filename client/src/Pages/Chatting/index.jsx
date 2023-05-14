@@ -20,7 +20,7 @@ export default function Chat() {
 
   useEffect(() => {
     if (user?.email) {
-      socket.current = io("http://localhost:4001");
+      socket.current = io(import.meta.env.VITE_SERVER_URL);
       socket.current.emit("add-user", user.email);
     }
   }, [user?.email]);
