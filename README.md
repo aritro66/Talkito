@@ -25,6 +25,8 @@ Talkito is deployed on Google Cloud and Firebase. To deploy Talkito, follow thes
 
 **Deployed Link** - https://chatapp-84b63.web.app/
 
+**Warning:** Deployed website may experience slow loading times, please be patient.
+
 ## Video Demonstration and Screeen Shots
 ![image](https://github.com/aritro66/Talkito/assets/78261928/650e8c16-0b0b-4aa0-b0cc-f48b17e0b250)
 
