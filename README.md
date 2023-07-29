@@ -1,5 +1,5 @@
 # Talkito - Real Time Chat App
-Talkito is a real-time chat web application built using React JS, Vite JS, Node JS, Socket.io, Google Cloud SQL, and Firebase. It provides users with the ability to initiate chats, send messages, view online status, and view previous chats with other registered users.
+Talkito is a real-time chat web application built using React JS, Vite JS, Node JS, Socket.io, Google Cloud SQL, GCP VM Instance, and Firebase. It provides users with the ability to initiate chats, send messages, view online status, and view previous chats with other registered users.
 
 ## Features
 * Sign in with Google
@@ -7,6 +7,7 @@ Talkito is a real-time chat web application built using React JS, Vite JS, Node 
 * Send messages to other users
 * View previous chats
 * View status of the user(online or offline)
+* View status of user typing
 
 ## Tech Stack
 * **React JS** - A front-end framework for building the user interface of the application. It provides a fast, scalable, and maintainable way of building dynamic web applications.
@@ -14,14 +15,14 @@ Talkito is a real-time chat web application built using React JS, Vite JS, Node 
 * **Node JS** - A back-end framework for the server-side of the application. It provides an event-driven architecture that enables real-time communication between clients and servers.
 * **Socket.io** - Enables real-time communication between the client and server. It provides real-time bidirectional communication between the server and clients and allows for the transmission of data in real-time.
 * **Google Cloud SQL** - A fully managed database service for storing the conversations between users. It provides automatic backups and easy scalability.
-* **Firebase** - Used for authentication and hosting the website. It provides a secure and easy-to-use way of authenticating users and managing user accounts. Firebase also offers a reliable hosting service that allows for the deployment of the application in a matter of minutes.
+* **Firebase and GCP VM Instance** - Used for authentication and hosting the website. It provides a secure and easy-to-use way of authenticating users and managing user accounts. Firebase also offers a reliable hosting service that allows for the deployment of the application in a matter of minutes.
 
 ## Deployment
 Talkito is deployed on Google Cloud and Firebase. To deploy Talkito, follow these steps:
 * Setup a free Google Cloud account.
 * Use Firebase for authentication. Only offer "sign in with Google".
 * Use Google's Cloud SQL to store the conversations that users have.
-* Use Firebase to host the website and run the Node.js backend.
+* Use Firebase to host the website(frontend part) and run the Node.js backend on VM instance.
 
 **Deployed Link** - https://chatapp-84b63.web.app/
 
